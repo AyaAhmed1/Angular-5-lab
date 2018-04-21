@@ -1,0 +1,26 @@
+<div align="center">
+  <h1> Registration </h1>
+
+  <br>
+  <br>
+
+</div>
+<form name="registerform" #registerform="ngForm"  (ngSubmit)="register(registerform)" novalidate >
+
+ <input type="text" placeholder="First Name" name="first_name" [(ngModel)]="dataForm.first_name">
+<br>
+<input type="text" placeholder="Last Name" name="last_name" [(ngModel)]="dataForm.last_name">
+<br>
+
+  <input type="email"  placeholder="email" name="email" [(ngModel)]="dataForm.email"  required/>
+  <br/>
+
+
+  <input type="password" name="password"  [(ngModel)]="dataForm.password"  required/>
+<br/>
+  
+  <input type="number" placeholder="phone" name="phone" [(ngModel)]="dataForm.phone"  >
+  <br/>
+
+  <button> Register </button>
+</form>

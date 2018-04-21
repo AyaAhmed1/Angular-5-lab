@@ -1,0 +1,15 @@
+<div align="center">
+    <h1>
+        Welcome to Home Page
+    </h1>
+
+
+    <!--<button (click)="go('login')">Login </button>-->
+    <button (click)="go('register')">Register</button>
+    <button (click)="go('loginform')">Login</button>
+    <button (click)="go('profile')"> Profile</button>
+
+
+</div>
+
+<app-list [hamada]="list" [flag]="flag" (method)="change()"> </app-list>

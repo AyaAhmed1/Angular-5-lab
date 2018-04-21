@@ -1,0 +1,19 @@
+<p>
+  students !
+</p>
+
+<table>
+  <th> Name</th>
+  <th> Age</th>
+  <th> Job</th>
+
+  <tr *ngFor="let student of  response">
+    <td>{{student.name}}</td>
+    <td> {{student.age}}</td>
+    <td> {{student.job}}</td>
+  </tr>
+</table>
+
+
+
+<app-list [hamada]="list" [flag]="flag" (method)="alertMethod()" > </app-list>

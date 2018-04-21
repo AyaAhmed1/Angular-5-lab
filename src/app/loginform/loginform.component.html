@@ -1,0 +1,29 @@
+<p>
+  loginform works!
+</p>
+<!--
+  Not Recommended 
+<form name="loginform" #loginform="ngForm"  (ngSubmit)="login(loginform)" novalidate >
+  <input type="email" name="email" ngModel #email="ngModel"  required/>
+  <input type="password" name="password" ngModel #password="ngModel"  required/>
+
+  <button> login </button>
+</form>
+-->
+<form name="loginform" #loginform="ngForm"  (ngSubmit)="login(loginform)" novalidate >
+
+  <input type="email" name="email" [(ngModel)]="dataForm.email"  required/>
+  <br/>
+  <!--
+ <span *ngIf="loginform.submitted && !dataForm.email ">
+    Error
+  </span>
+-->
+ <!-- <span *ngIf="!loginform.submitted && !dataForm.email">
+    Error
+  </span>
+-->
+  <input type="password" name="password" ngModel [(ngModel)]="dataForm.password"  required/>
+
+  <button> login </button>
+</form>
